@@ -9,6 +9,8 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 
 # Install dependencies
+# Install gunicorn
+RUN pip install gunicorn
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
@@ -19,4 +21,5 @@ COPY . .
 EXPOSE 5000
 
 # Use Gunicorn for serving the app
-CMD ["gunicorn", "-b", "0.0.0.0:5000", "RAYMOND-INVESTMENT:create_app()"]
+CMD ["gunicorn", "-b", "0.0.0.0:5000", "RAYMOND_INVESTMENT:create_app"]
+
