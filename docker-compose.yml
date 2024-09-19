@@ -1,0 +1,14 @@
+services:
+  frontend:
+    build:
+      context: C:\Users\DON\Documents\OneDrive\Desktop\RAYMOND INVESTMENT LIMITED MAIN\raymond-limited
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+
+  backend:
+    build:
+      context: C:\Users\DON\Documents\OneDrive\Desktop\RAYMOND INVESTMENT LIMITED MAIN\RAYMOND-INVESTMENT-BACK-END
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"

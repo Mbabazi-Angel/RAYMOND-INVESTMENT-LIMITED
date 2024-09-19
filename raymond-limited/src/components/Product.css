@@ -1,0 +1,64 @@
+.product-background {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/threads.jpg'); /* Update with the correct path to your image */
+  background-size: cover;
+  background-position: center;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px;
+}
+
+.product-card {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #dddddd; /* Light gray border */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left; /* Align text to the left */
+}
+
+.product-image {
+  width: 100%; /* Ensure images take the full width */
+  height: 200px; /* Set a fixed height for images */
+  object-fit: cover; /* Ensure images cover the fixed height without distortion */
+  border-radius: 8px;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  color: #007bff; /* Blue price color */
+}
+
+.order-button, .add-to-cart-button {
+  display: inline-block;
+  padding: 10px 1px;
+  margin-top: 10px;
+  background-color: #007bff; /* Blue button */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  border: none; /* Remove default button border */
+  font-size: 1rem; /* Ensure font size matches */
+  width: 100%; /* Ensure buttons take up full width of their container */
+  text-align: center; /* Center-align text inside buttons */
+}
+
+.order-button:hover, .add-to-cart-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.add-to-cart-button {
+  cursor: pointer; /* Change cursor to pointer for button */
+}
+

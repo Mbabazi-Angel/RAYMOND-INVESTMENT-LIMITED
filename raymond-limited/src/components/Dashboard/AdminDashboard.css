@@ -1,0 +1,35 @@
+.admin-dashboard {
+  display: flex;
+}
+
+.admin-nav {
+  flex-shrink: 0;
+  width: 200px;
+  background: #f8f9fa;
+  padding: 20px;
+}
+
+.admin-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-nav li {
+  margin-bottom: 10px;
+}
+
+.admin-nav li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.admin-nav li a:hover {
+  text-decoration: underline;
+}
+
+.admin-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+  

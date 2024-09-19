@@ -1,0 +1,10 @@
+.services-background {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/threads.jpg'); /* Update with the correct path to your image */
+    background-size: cover;
+    background-position: center;
+  }
