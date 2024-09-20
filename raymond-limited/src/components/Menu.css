@@ -7,7 +7,6 @@
   justify-content: space-between;
   background-color: grey; 
   padding: 10px 20px;
-  flex-wrap: wrap; /* Allow wrapping of items on small screens */
 }
 
 /* Logo styles */
@@ -22,12 +21,15 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap; /* Allow menu items to wrap on smaller screens */
+  overflow: hidden; /* Prevent items from wrapping */
+  flex-grow: 1; /* Allow the menu to grow to fill available space */
+  justify-content: flex-start; /* Align items to the left */
+  white-space: nowrap; /* Prevent wrapping of menu items */
+  flex-shrink: 0; /* Prevent shrinking */
 }
 
 .menu li {
   margin-left: 20px;
-  margin-bottom: 10px; /* Add spacing below for smaller screens */
 }
 
 .menu li a {
@@ -46,15 +48,6 @@
 
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
-  .menu {
-    flex-direction: column; /* Stack the menu items vertically */
-    align-items: center; /* Center the menu items */
-  }
-
-  .menu li {
-    margin-left: 0;
-  }
-
   .header-container {
     flex-direction: column; /* Stack logo and menu vertically */
     align-items: center;
@@ -63,6 +56,16 @@
   .logo {
     max-width: 100px; /* Further reduce the size of the logo on mobile */
   }
+
+  .menu {
+    justify-content: center; /* Center items on smaller screens */
+    flex-wrap: nowrap; /* Ensure items remain in a single row */
+  }
+
+  .menu li {
+    margin-left: 10px; /* Adjust margin for tighter spacing */
+  }
 }
+
 
 
