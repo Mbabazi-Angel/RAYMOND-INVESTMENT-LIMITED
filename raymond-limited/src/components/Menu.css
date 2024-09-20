@@ -5,14 +5,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: grey; /* Background color for the entire header */
-  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: grey; 
+  padding: 10px 20px;
+  flex-wrap: wrap; /* Allow wrapping of items on small screens */
 }
 
 /* Logo styles */
 .logo {
-  max-width: 100%; /* Ensure the logo does not exceed its container width */
-  height: auto; /* Maintain the aspect ratio */
+  max-width: 150px; /* Adjust size for mobile */
+  height: auto;
 }
 
 /* Navigation bar styles */
@@ -21,24 +22,47 @@
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap; /* Allow menu items to wrap on smaller screens */
 }
 
 .menu li {
-  margin-left: 20px; /* Space between navigation items */
+  margin-left: 20px;
+  margin-bottom: 10px; /* Add spacing below for smaller screens */
 }
 
 .menu li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 12px; /* Adjust padding for smaller screens */
   text-decoration: none;
-  transition: color 0.3s; /* Smooth transition for color change */
+  transition: color 0.3s;
 }
 
 .menu li a:hover {
-  background-color: #555; /* Darker background color on hover */
-  color: #ffd700; /* Golden color on hover */
+  background-color: #555;
+  color: #ffd700;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column; /* Stack the menu items vertically */
+    align-items: center; /* Center the menu items */
+  }
+
+  .menu li {
+    margin-left: 0;
+  }
+
+  .header-container {
+    flex-direction: column; /* Stack logo and menu vertically */
+    align-items: center;
+  }
+
+  .logo {
+    max-width: 100px; /* Further reduce the size of the logo on mobile */
+  }
 }
 
 

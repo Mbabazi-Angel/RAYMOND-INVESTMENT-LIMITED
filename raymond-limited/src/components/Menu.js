@@ -26,7 +26,6 @@ const Menu = () => {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/product">Products</Link></li>
-            <li><Link to="/OrderSummary">Orders</Link></li> 
             <li><Link to="/review">Reviews</Link></li> 
             <li><Link to="/cart" className="cart-icon">Cart</Link></li>
             
@@ -40,7 +39,6 @@ const Menu = () => {
         <Route path="/about" element={<About />} />
         <Route path="/product" element={<Product />} />
         <Route path="/order/:productId" element={<Order />} />
-        <Route path="/orderSummary" element={<OrderSummary />} />
         <Route path="/review" element={<Review />} />
         <Route path="/cart" element={<Cart />} /> 
         <Route path="/admin/*" element={<AdminDashboard />} />
@@ -55,3 +53,5 @@ export default Menu;
 
 
 
+/**<li><Link to="/OrderSummary">Orders</Link></li> */
+/**<Route path="/orderSummary" element={<OrderSummary />} /> */
