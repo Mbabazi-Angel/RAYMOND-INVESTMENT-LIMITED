@@ -9,7 +9,6 @@ import LoginForm from './Auth2';
 import About from './About'; 
 import Order from './Order'; 
 import Cart from './cart';
-import OrderSummary from './OrderSummary';
 import AdminDashboard from './Dashboard/AdminDashboard';
 import Unauthorized from './Dashboard/Unauthorized';
 import ProtectedRoute from './Dashboard/ProtectedRoute';
